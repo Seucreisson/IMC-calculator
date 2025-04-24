@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section id="titulo">
+            <h1>DESCUBRA SEU PESO</h1>
+        </section>
+        <section class="texto">
+            <div id="imc">
+                <h2>Imc</h2>
+                <ul type="none">
+                    <li>Menos que 18,5</li>
+                    <li>Entre 18,5 e 24,9</li>
+                    <li>Entre 25 e 29,9</li>
+                    <li>Entre 30 e 34,9</li>
+                    <li>Entre 35 e 39,9</li>
+                    <li>Mais que 40</li>
+                </ul>
+            </div>
+            <div id="resultado">
+                <h2>Resultado</h2>
+                <ul type="none">
+                    <li>Abaixo do peso</li>
+                    <li>Peso normal</li>
+                    <li>Sobre-peso</li>
+                    <li>Obesidade grau 1</li>
+                    <li>Obesidade grau 2</li>
+                    <li>Obesidade grau 3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="botoes">
+        <form class="dados" action="#" method="post">
+                    <p>
+                        <label for="num1">Peso:</label>
+                        <input type="number" name="num1" id="num1" step="0.1">
+                    </p>
+                    <p>
+                        <label for="num2">Altura:</label>
+                        <input type="number" name="num2" id="num2" min="0" max="2.5" step="0.01">
+                    </p>
+                <button type="submit">Enviar</button>
+        </form>
+        </section>
+        <div class="fim"></div>
+    </main>
+
+    <script src="js/codigo.js"></script>
+</body>
+</html>
